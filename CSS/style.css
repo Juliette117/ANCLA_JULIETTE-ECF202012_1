@@ -3,50 +3,10 @@ body{
     background-color: white;
 }
 
-/* ______________________________________________STRUCTURE______________________________________________  */
 
 
 
 
-
-
-
-
-
-
-
-  /* ____________________________________________________________________________________________________________________  */
-
-
-/* -----------Footer----------- */
-
-footer {    
-  color: grey;
-  background-color: #171717;
-  padding: 20px;
-}
-
-  ul{
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    color: grey;
-  }
-  
-  li{
-    padding-right: 50px;
-    font-size: 20px;
-  }
-
-  a{
-    color:grey;
-  }
-  /* Le texte change de couleur au passage de la souris */
-   a:hover{
-    text-decoration: none;
-    color: #FAFAFA;
-  }
-  /* -------------------------- */
 
 
 /* ____________________________________________________HEADER__________________________________________________________  */
@@ -54,7 +14,6 @@ footer {
 
 
 header {
-    justify-content: space-between;
     background-color:#902E2E;
     height: 100px; 
     padding: 20px 0 0 20px;
@@ -87,33 +46,138 @@ h3{
 
 }
 
-article {
-  min-height: 100vh;
+#main{
   background: linear-gradient(to top, #464E67, #ffffff);
-
+  min-height: 100vh;
+  
 }
+
+article {
+ 
+} 
 
 aside{
-  background-color: green;
+  display: inline-block; 
+  background: linear-gradient(to top, #336EA5, #B6B9C3);
+  width: 270px;
+  height: 450px;
+  text-align: center;
+  color: white;
+  padding-top: 90px;
+  
+  
+
+  
+  
 }
 
-.artistes{
+aside p{
+  display: block;
+ 
+}
+
+
+.artistes{  
   display: flex;
-  
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  position: relative;
   
-
-
 }
 
 .artistes img{
-  max-width: 200px;
-  max-height: 200px;
+  width: 250px;
+  height: 250px;
+  /* max-width: 200px;
+  max-height: 200px; */
   margin: 20px;
-  border: 4px solid white;
+  border: 5px solid #FAFAFA;
   border-radius: 10%
+}
+
+.artistes img:hover{
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.12), 10px 10px 10px rgba(0,0,0,0.24);
+  transition: all 0.3s ease-out;
+  border: 5px solid rgba(0, 0, 0, 0.192);
+}
+
+.rangee1{  
+  margin: 10px 0 0 -150px;
+}
+
+.rangee2{ 
+ 
+}
+/* Icônes réseaux sociaux */
+.icones{
+  text-align:center;
+  word-spacing: 20px;
 }
 
 
 /* ______________________________________________________________________________________________________________  */
+
+
+/* ____________________________________________________FOOTER____________________________________________________  */
+
+footer {    
+  color: grey;
+  background-color: #171717;
+  padding: 20px;
+}
+
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    color: grey;
+  }
+  
+  li{
+    padding-right: 50px;
+    font-size: 20px;
+  }
+
+  a{
+    color:grey;
+  }
+  /* Le texte change de couleur au passage de la souris */
+   a:hover{
+    text-decoration: none;
+    color: #FAFAFA;
+  }
+/* ______________________________________________________________________________________________________________  */
+
+
+
+.searchbar{
+  display: flex;
+  justify-content: center;
+  height:60px;
+  margin-top: 10px;
+  display: flex;
+  padding: 10px;
+  left: 40%;  
+  outline: none;
+}
+.round-left {
+  padding: 5px 10px;
+  border: 1px solid #7F8596;
+  background: #ffff;
+  border-right: none;
+  border-radius: 30px 0 0 30px;
+  outline-style: none;
+}
+.round-right {
+  padding: 5px 10px;
+  border: 1px solid #7F8596;
+  background: #ffff;
+  border-radius: 0 30px 30px 0;
+  border-left: none;
+  outline-style: none;
+  
+}
+
+input{
+  outline-style: none;
+}

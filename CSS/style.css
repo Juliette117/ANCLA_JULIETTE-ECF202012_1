@@ -4,35 +4,44 @@ body{
 }
 
 
-
-
-
-
-
 /* ____________________________________________________HEADER__________________________________________________________  */
 
 
 
-header {
+header{
     background-color:#902E2E;
     height: 100px; 
-    padding: 20px 0 0 20px;
+    padding: 5px 0 0 30px;
   }
 
-  h1{
+  header h1 a{
+    color: white;
+  }
+
+h1{
     display: inline;
     color: #FFFFFF;  
+    font-weight: bold;
+    font-size: 70px;
 }
 
 h2{
     display: inline;
-    font-size: 20px;
+    font-size: 30px;
     color: #FFFFFF;
 }
 
+/* Menu burger pour responsive design */
 nav a{
-    display: none;
+  display: none;
 }
+
+ /* sidenav menu */
+ .sidenav {
+  display: none;
+}
+
+
 
 /* ____________________________________________________________________________________________________________________  */
 
@@ -42,9 +51,14 @@ h3{
   text-align: center;
   font-size: 40px;
   padding-top: 70px;
-
-
 }
+
+h4{  
+  font-size: 40px;
+  padding-top: 70px;
+  margin-left: 500px;
+}
+
 
 #main{
   background: linear-gradient(to top, #464E67, #ffffff);
@@ -52,10 +66,10 @@ h3{
   
 }
 
-article {
- 
-} 
+/* article {
+}  */
 
+/* Aside recherche récente */
 aside{
   display: inline-block; 
   background: linear-gradient(to top, #336EA5, #B6B9C3);
@@ -63,20 +77,27 @@ aside{
   height: 450px;
   text-align: center;
   color: white;
-  padding-top: 90px;
-  
-  
-
-  
+  padding-top: 50px;  
   
 }
 
-aside p{
-  display: block;
- 
+/* Aside "artistes récemment consultés" */
+.historique{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 1230px;
+  margin-top: -600px;
+  width: 500px;
+  text-align: center;
+  font-size: 30px;  
+}
+.historique img{
+  width: 70%;
 }
 
 
+
+/* Images des aritsites  */
 .artistes{  
   display: flex;
   flex-wrap: wrap;
@@ -91,65 +112,95 @@ aside p{
   /* max-width: 200px;
   max-height: 200px; */
   margin: 20px;
-  border: 5px solid #FAFAFA;
-  border-radius: 10%
+  border: 7px solid #FAFAFA;
+  border-radius: 7%
 }
 
+/* Effet au passage de la souris pour signaler une interaction */
 .artistes img:hover{
   box-shadow: 10px 10px 10px rgba(0,0,0,0.12), 10px 10px 10px rgba(0,0,0,0.24);
   transition: all 0.3s ease-out;
   border: 5px solid rgba(0, 0, 0, 0.192);
 }
 
+/* Première rangée d'images */
 .rangee1{  
   margin: 10px 0 0 -150px;
 }
 
-.rangee2{ 
+/* .rangee2{ 
  
-}
+} */
+
 /* Icônes réseaux sociaux */
 .icones{
   text-align:center;
-  word-spacing: 20px;
+  word-spacing: 30px;
+  margin-top: 20px;
+}
+
+.iconespageartistes{
+  text-align:center;
+  word-spacing: 30px;
+  margin-top: -60px;
+  margin-left: 230px;
+}
+.iconesresp{
+  display: none;
+}
+.listento{
+  display: inline-block;
+  margin-top: 170px;
+  margin-bottom: 20px;
+  font-size: 25px;
 }
 
 
-/* ______________________________________________________________________________________________________________  */
-
-
-/* ____________________________________________________FOOTER____________________________________________________  */
-
-footer {    
-  color: grey;
+/* Card aritstes */
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 100px;
+}
+.card{
+  padding: 10px;
   background-color: #171717;
-  padding: 20px;
+  color: #FAFAFA;  
+  border-radius: 2%;
+  margin-top: 100px;
+  
+}
+.card-img-top{
+  border-radius: 2%;
 }
 
-  ul{
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    color: grey;
-  }
+/* Aside dates de concerts */
+.concerts{
+  background: linear-gradient(to top, #336EA5, #B6B9C3);
+  color: white;
+  text-align: center;
+  margin-left: -15px;
+  width: 420px;
+  height: 584px;
+  margin-top: 110px;
   
-  li{
-    padding-right: 50px;
-    font-size: 20px;
-  }
+}
+p{
+ 
+  font-size: 25px;
+}
+.concerts li{
+  text-align: left;
+  padding-top:10px;
+  list-style: none; 
+}
+/* .txtconcerts2{
 
-  a{
-    color:grey;
-  }
-  /* Le texte change de couleur au passage de la souris */
-   a:hover{
-    text-decoration: none;
-    color: #FAFAFA;
-  }
-/* ______________________________________________________________________________________________________________  */
+} */
 
-
-
+/* Barre de recherche */
 .searchbar{
   display: flex;
   justify-content: center;
@@ -178,6 +229,162 @@ footer {
   
 }
 
-input{
-  outline-style: none;
+
+
+
+
+
+/* ______________________________________________________________________________________________________________  */
+
+
+/* ____________________________________________________FOOTER____________________________________________________  */
+
+footer {    
+  color: grey;
+  background-color: #171717;
+  padding: 20px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    color: grey;
+  }
+  
+footer li{
+    padding-right: 50px;
+    font-size: 20px;
+  }
+
+  a{
+    color:grey;
+  }
+  /* Le texte change de couleur au passage de la souris pour signaler une interaction */
+   a:hover{
+    text-decoration: none;
+    color: #FAFAFA;
+  }
+/* ______________________________________________________________________________________________________________  */
+
+
+
+
+
+/* Responsive design */
+@media screen and (max-width: 980px) {  
+
+  header{
+    height: 130px;
+    padding: 0 0 0 220px;
+  }
+
+  h1{
+    font-size: 90px;
+  }
+
+
+
+  h4{
+    margin-left: 240px;
+    font-size: 50px;
+  }
+
+  h5{
+    font-size:40px;
+  }
+
+  p{
+    font-size: 45px;
+  }
+
+  .container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: 124px;
+  }
+  
+  
+  .card {
+   
+    font-size:30px;
+    
+  }
+  .concerts{
+    display: inline-block;
+    margin: auto;
+    width: 670px;
+    height: 400px;
+  }
+  .concerts li{
+    font-size: 30px;
+    
+  }
+
+  .listento {
+    display: none;
+  }
+
+  .iconesresp{
+    display: block;
+    word-spacing: 30px;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  nav a{
+    display: inline-block;
+    font-size: 90px;
+    color: white;
+    margin-right: 190px;
+    margin-left: -200px;
+    
+}
+
+ /* sidenav menu */
+ .sidenav {
+   display: block;
+  margin: 122px 0px 0px -220px;
+  height: 20%; 
+  width: 0; /* change avec JavaScript */
+  position: fixed;
+  z-index: 1; 
+  background: linear-gradient(to top, #464E67, #ffffff);
+  overflow: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+.sidenav a {
+  padding: 20px 20px 20px 20px;
+  font-size: 25px;
+  color: #FAFAFA;
+  display: block;
+  transition: 0.3s
+}
+/* sidenav "surbrillance" */
+.sidenav a:hover, .offcanvas a:focus{
+  text-decoration: none;
+  color:rgb(63, 63, 114);
+}
+/*  sidenav closebtn*/
+.sidenav .closebtn {
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: rgb(63, 63, 114);
+}
+/* Footer */
+footer ul{
+  padding-right: 10px;
+  padding-top: 10px;
+}
+footer li{
+  font-size: 30px;
+  padding-right: 30px;
+}
+
 }

@@ -27,9 +27,13 @@ h1{
 
 h2{
     display: inline;
-    font-size: 30px;
+    font-size: 20px;
     color: #FFFFFF;
 }
+
+/* h1 a{
+  display: block;
+} */
 
 /* Menu burger pour responsive design */
 nav a{
@@ -37,7 +41,7 @@ nav a{
 }
 
  /* sidenav menu */
- .sidenav {
+ .sidenav{
   display: none;
 }
 
@@ -150,7 +154,7 @@ aside{
   display: none;
 }
 
-.asideresp{
+.asidetab{
   display: none;
 }
 
@@ -293,7 +297,15 @@ footer li{
     padding: 0 0 0 220px;
   }
   h1{
+    display: flex;
     font-size: 90px;
+    margin-top: -120px;
+    margin-left: 60px;
+  }
+  h2{
+    display: flex;
+    margin-top: -60px;
+    margin-left: 510px;
   }
   h3{
     font-size: 50px;
@@ -336,7 +348,7 @@ footer li{
     padding-bottom: 60px;
   }
 
-  .asideresp{
+  .asidetab{
     display: none;
   }
 
@@ -464,7 +476,15 @@ footer li{
     padding: 0 0 0 220px;
   }
   h1{
+    display: flex;
     font-size: 90px;
+    margin-top: -120px;
+    margin-left: 60px;
+  }
+  h2{
+    display: flex;
+    margin-top: -60px;
+    margin-left: 510px;
   }
   h3{
     font-size: 50px;

@@ -78,7 +78,6 @@ aside{
   text-align: center;
   color: white;
   padding-top: 50px;  
-  
 }
 
 /* Aside "artistes récemment consultés" */
@@ -93,6 +92,7 @@ aside{
 }
 .historique img{
   width: 70%;
+  margin: 20px;
 }
 
 
@@ -103,14 +103,15 @@ aside{
   flex-wrap: wrap;
   justify-content: space-around;
   position: relative;
-  
+}
+ /* Apparait que sur smartphone et tablette */
+.artistesresp{
+  display: none;
 }
 
 .artistes img{
   width: 250px;
   height: 250px;
-  /* max-width: 200px;
-  max-height: 200px; */
   margin: 20px;
   border: 7px solid #FAFAFA;
   border-radius: 7%
@@ -128,31 +129,37 @@ aside{
   margin: 10px 0 0 -150px;
 }
 
-/* .rangee2{ 
- 
-} */
+.rangee2resp{ 
+ display: none;
+}
 
 /* Icônes réseaux sociaux */
 .icones{
   text-align:center;
   word-spacing: 30px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .iconespageartistes{
   text-align:center;
   word-spacing: 30px;
-  margin-top: -60px;
+  margin-top: -30px;
   margin-left: 230px;
 }
 .iconesresp{
   display: none;
 }
+
+.asideresp{
+  display: none;
+}
+
 .listento{
   display: inline-block;
-  margin-top: 170px;
-  margin-bottom: 20px;
-  font-size: 25px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 27px;
+  width: 110%;
 }
 
 
@@ -187,6 +194,7 @@ aside{
   margin-top: 110px;
   
 }
+
 p{
  
   font-size: 25px;
@@ -205,7 +213,7 @@ p{
   display: flex;
   justify-content: center;
   height:60px;
-  margin-top: 10px;
+  margin-top: 60px;
   display: flex;
   padding: 10px;
   left: 40%;  
@@ -218,6 +226,8 @@ p{
   border-right: none;
   border-radius: 30px 0 0 30px;
   outline-style: none;
+  width: 440px;
+  height: 60px;
 }
 .round-right {
   padding: 5px 10px;
@@ -226,8 +236,12 @@ p{
   border-radius: 0 30px 30px 0;
   border-left: none;
   outline-style: none;
+  padding: 5px 20px;
+    height: 60px;
   
 }
+
+
 
 
 
@@ -269,34 +283,65 @@ footer li{
 
 
 
+/* __________________________________________MEDIA QUERIES (Responsive design)___________________________________  */
 
-
-/* Responsive design */
-@media screen and (max-width: 980px) {  
+/* Pour smartphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){  
 
   header{
     height: 130px;
     padding: 0 0 0 220px;
   }
-
   h1{
     font-size: 90px;
   }
-
-
-
-  h4{
-    margin-left: 240px;
+  h3{
     font-size: 50px;
   }
-
+  h4{
+    margin-left: 230px;
+    font-size: 50px;
+  }
   h5{
     font-size:40px;
   }
-
   p{
     font-size: 45px;
   }
+
+
+  /* PAGE HOME */
+
+  .artistes img{
+    width: 700px;
+    height: 700px;
+    margin-left: -270px;
+  }
+
+  .rangee1{  
+    width: 0;
+  }
+  .rangee2{
+    display: none;
+  }
+  .rangee2resp{ 
+    display: block;
+    width: 0;
+    margin-top: 3710px;
+    margin-left: -1120px;
+   }
+
+  .icones{
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .asideresp{
+    display: none;
+  }
+
+
+  /* PAGE ARTISTE */
 
   .container {
     display: block;
@@ -304,11 +349,15 @@ footer li{
     height: 100%;
     margin-left: 124px;
   }
-  
-  
+   
   .card {
    
-    font-size:30px;
+    font-size: 37px;
+    
+  }
+  .card-title {
+   
+    font-size:50px;
     
   }
   .concerts{
@@ -316,6 +365,7 @@ footer li{
     margin: auto;
     width: 670px;
     height: 400px;
+    
   }
   .concerts li{
     font-size: 30px;
@@ -340,6 +390,18 @@ footer li{
     margin-right: 190px;
     margin-left: -200px;
     
+}
+
+.round-left{
+  font-size: 40px;
+  width: 490px;
+  height: 70px;
+}
+.round-right{
+  font-size: 30px;
+  height: 70px;
+
+
 }
 
  /* sidenav menu */
@@ -377,7 +439,10 @@ footer li{
   margin-left: 50px;
   color: rgb(63, 63, 114);
 }
-/* Footer */
+
+
+/* FOOTER */
+
 footer ul{
   padding-right: 10px;
   padding-top: 10px;
@@ -388,3 +453,161 @@ footer li{
 }
 
 }
+
+
+/* Pour tablettes */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+  header{
+    height: 130px;
+    padding: 0 0 0 220px;
+  }
+  h1{
+    font-size: 90px;
+  }
+  h3{
+    font-size: 50px;
+  }
+  h4{
+    margin-left: 230px;
+    font-size: 50px;
+  }
+  h5{
+    font-size:30px;
+  }
+  p{
+    font-size: 30px;
+  }
+  
+  nav a{
+    display: inline-block;
+    font-size: 90px;
+    color: white;
+    margin-right: 190px;
+    margin-left: -200px;  
+  }
+
+  article{
+    padding-bottom: 70px;
+  }
+
+    /* PAGE HOME */
+
+    .artistes{
+      display: none;
+     }
+
+    .artistesresp{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .artistesresp img{
+      width: 250px;
+      height: 250px;
+      border: 7px solid #FAFAFA;
+      border-radius: 7%;
+      margin: 50px 0 0 56px;
+    }
+
+    .icones{
+      display: inline-block;
+    }
+    
+    .asidetab{
+    background: linear-gradient(to top, #336EA5, #B6B9C3);
+    color: white;
+    width: 270px;
+    text-align: center;
+    display: flex;
+    margin-left: 60px;
+    height: 390px;
+    margin-top: -160px;
+    }
+  
+  
+    /* PAGE ARTISTE */
+
+    .container{
+      max-width: 900px;
+      margin-left: 10px;
+  }
+
+
+    .card-deck .card {
+
+      flex: 1 0 0%;
+      margin-right: 15px;
+      margin-bottom: 0;
+      margin-left: 100px;
+  }
+  
+    .concerts{
+      margin-left: -20px;
+      height: 530px;
+      margin-top: 100px;
+  }
+  
+    .listento{
+      margin-left: 40px;
+      width: 860px;
+  }
+
+    .searchbar, .icones{
+      margin-left: 360px;
+    }
+   
+
+   /* SIDENAV MENU */
+   .sidenav {
+     display: block;
+    margin: 122px 0px 0px -220px;
+    height: 20%; 
+    width: 0; /* changera avec JavaScript */
+    position: fixed;
+    z-index: 1; 
+    background: linear-gradient(to top, #464E67, #ffffff);
+    overflow: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  .sidenav a {
+    padding: 20px 20px 20px 20px;
+    font-size: 25px;
+    color: #FAFAFA;
+    display: block;
+    transition: 0.3s
+  }
+  /* sidenav "surbrillance" */
+  .sidenav a:hover, .offcanvas a:focus{
+    text-decoration: none;
+    color:rgb(63, 63, 114);
+  }
+  /*  sidenav closebtn*/
+  .sidenav .closebtn {
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: rgb(63, 63, 114);
+  }
+  
+  
+  /* FOOTER */
+  
+  footer ul{
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  footer li{
+    font-size: 30px;
+    padding-right: 30px;
+  }
+  
+  }
+
+
+/* ______________________________________________________________________________________________________________  */

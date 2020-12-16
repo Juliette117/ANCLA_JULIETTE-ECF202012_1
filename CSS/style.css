@@ -1,6 +1,9 @@
+/* Police */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body{
     background-color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -51,18 +54,6 @@ nav a{
 
 /* ____________________________________________________MAIN__________________________________________________________  */
 
-h3{  
-  text-align: center;
-  font-size: 40px;
-  padding-top: 70px;
-}
-
-h4{  
-  font-size: 40px;
-  padding-top: 70px;
-  margin-left: 500px;
-}
-
 
 #main{
   background: linear-gradient(to top, #464E67, #ffffff);
@@ -70,8 +61,18 @@ h4{
   
 }
 
-/* article {
-}  */
+
+  /* PAGE HOME */
+
+h3{  
+  text-align: center;
+  font-size: 40px;
+  padding-top: 70px;
+}
+
+p{
+  font-size: 25px;
+}
 
 /* Aside recherche récente */
 aside{
@@ -84,35 +85,20 @@ aside{
   padding-top: 50px;  
 }
 
-/* Aside "artistes récemment consultés" */
-.historique{
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 1230px;
-  margin-top: -600px;
-  width: 500px;
-  text-align: center;
-  font-size: 30px;  
-}
-.historique img{
-  width: 70%;
-  margin: 20px;
-}
-
-
-
-/* Images des aritsites  */
+/* Position images des aritsites  */
 .artistes{  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   position: relative;
 }
+
  /* Apparait que sur smartphone et tablette */
 .artistesresp{
   display: none;
 }
 
+/* Images des artistes */
 .artistes img{
   width: 250px;
   height: 250px;
@@ -120,7 +106,6 @@ aside{
   border: 7px solid #FAFAFA;
   border-radius: 7%
 }
-
 /* Effet au passage de la souris pour signaler une interaction */
 .artistes img:hover{
   box-shadow: 10px 10px 10px rgba(0,0,0,0.12), 10px 10px 10px rgba(0,0,0,0.24);
@@ -133,6 +118,7 @@ aside{
   margin: 10px 0 0 -150px;
 }
 
+/* Apparait que sur smartphone et tablette */
 .rangee2resp{ 
  display: none;
 }
@@ -143,74 +129,18 @@ aside{
   word-spacing: 30px;
   margin-top: 30px;
 }
-
-.iconespageartistes{
-  text-align:center;
-  word-spacing: 30px;
-  margin-top: -30px;
-  margin-left: 230px;
-}
+/* Apparait que sur smartphone et tablette */
 .iconesresp{
   display: none;
 }
-
+/* Apparait que sur tablette */
 .asidetab{
   display: none;
 }
-
-.listento{
-  display: inline-block;
-  margin-top: 60px;
-  margin-bottom: 30px;
-  font-size: 27px;
-  width: 110%;
+/* Apparait que sur smartphone */
+.asidesp{
+  display: none;
 }
-
-
-/* Card aritstes */
-.container{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: 100px;
-}
-.card{
-  padding: 10px;
-  background-color: #171717;
-  color: #FAFAFA;  
-  border-radius: 2%;
-  margin-top: 100px;
-  
-}
-.card-img-top{
-  border-radius: 2%;
-}
-
-/* Aside dates de concerts */
-.concerts{
-  background: linear-gradient(to top, #336EA5, #B6B9C3);
-  color: white;
-  text-align: center;
-  margin-left: -15px;
-  width: 420px;
-  height: 584px;
-  margin-top: 110px;
-  
-}
-
-p{
- 
-  font-size: 25px;
-}
-.concerts li{
-  text-align: left;
-  padding-top:10px;
-  list-style: none; 
-}
-/* .txtconcerts2{
-
-} */
 
 /* Barre de recherche */
 .searchbar{
@@ -241,13 +171,93 @@ p{
   border-left: none;
   outline-style: none;
   padding: 5px 20px;
-    height: 60px;
-  
+  height: 60px; 
 }
 
 
+  /* PAGE ARTISTE */
+
+h4{  
+  font-size: 40px;
+  padding-top: 70px;
+  margin-left: 500px;
+}
+
+/* Card aritstes */
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 100px;
+}
+.card{
+padding: 10px;
+background-color: #171717;
+color: #FAFAFA;  
+border-radius: 2%;
+margin-top: 100px;
+}
+.card-img-top{
+border-radius: 2%;
+}
+
+/* Aside dates de concerts */
+.concerts{
+background: linear-gradient(to top, #336EA5, #B6B9C3);
+color: white;
+text-align: center;
+margin-left: -15px;
+width: 420px;
+height: 584px;
+margin-top: 110px;
+
+}
 
 
+.concerts li{
+text-align: left;
+padding-top:10px;
+list-style: none; 
+}
+
+  /* Aside "artistes récemment consultés" */
+.historique{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 1230px;
+  margin-top: -600px;
+  width: 500px;
+  text-align: center;
+  font-size: 30px;  
+}
+.historique img{
+  width: 70%;
+  margin: 20px;
+}
+
+
+/* Apparait que sur smartphone et tablette */
+.videosresp{
+  display: none;
+}
+
+.listento{
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 27px;
+  width: 120%;
+}
+
+/* Icones réseaux sociaux */
+.iconespageartistes{
+  text-align:center;
+  word-spacing: 30px;
+  margin-top: -30px;
+  margin-left: 270px;
+  width: 990px;
+}
 
 
 
@@ -304,8 +314,8 @@ footer li{
   }
   h2{
     display: flex;
-    margin-top: -60px;
-    margin-left: 510px;
+    margin-top: -50px;
+    margin-left: 540px;
   }
   h3{
     font-size: 50px;
@@ -316,6 +326,9 @@ footer li{
   }
   h5{
     font-size:40px;
+  }
+  article{
+    padding-bottom: 70px;
   }
   p{
     font-size: 45px;
@@ -352,6 +365,18 @@ footer li{
     display: none;
   }
 
+  .asidesp{
+  background: linear-gradient(to top, #336EA5, #B6B9C3);
+  color: white;
+  width: 550px;
+  display: flex;
+  margin-left: 210px;
+  height: 500px;
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
 
   /* PAGE ARTISTE */
 
@@ -382,6 +407,11 @@ footer li{
   .concerts li{
     font-size: 30px;
     
+  }
+
+  .videosresp{
+  display: block;
+  margin-top: 70px;
   }
 
   .listento {
@@ -461,7 +491,7 @@ footer ul{
 }
 footer li{
   font-size: 30px;
-  padding-right: 30px;
+  padding-left: 30px;
 }
 
 }
@@ -483,8 +513,8 @@ footer li{
   }
   h2{
     display: flex;
-    margin-top: -60px;
-    margin-left: 510px;
+    margin-top: -50px;
+    margin-left: 540px;
   }
   h3{
     font-size: 50px;
@@ -534,6 +564,10 @@ footer li{
     .icones{
       display: inline-block;
     }
+
+    .asidesp{
+      display: none;
+    }
     
     .asidetab{
     background: linear-gradient(to top, #336EA5, #B6B9C3);
@@ -545,6 +579,11 @@ footer li{
     height: 390px;
     margin-top: -160px;
     }
+
+    .searchbar, .icones{
+      margin-left: 360px;
+    }
+   
   
   
     /* PAGE ARTISTE */
@@ -566,7 +605,11 @@ footer li{
     .concerts{
       margin-left: -20px;
       height: 530px;
-      margin-top: 100px;
+      margin-top: 110px;
+  }
+
+  .videosresp{
+    display: none;
   }
   
     .listento{
@@ -574,10 +617,11 @@ footer li{
       width: 860px;
   }
 
-    .searchbar, .icones{
-      margin-left: 360px;
-    }
-   
+  .iconespageartistes{
+    width: 600px;
+  }
+
+
 
    /* SIDENAV MENU */
    .sidenav {
@@ -619,7 +663,7 @@ footer li{
   /* FOOTER */
   
   footer ul{
-    padding-right: 10px;
+    padding-left: 10px;
     padding-top: 10px;
   }
   footer li{

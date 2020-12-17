@@ -76,13 +76,19 @@ p{
 /* Aside recherche récente */
 aside{
   display: inline-block; 
+  position: fixed;
   background: linear-gradient(to top, #336EA5, #B6B9C3);
   width: 270px;
-  height: 450px;
+  height: auto;
   text-align: center;
   color: white;
   padding-top: 50px;  
+  margin-left: -270px;
   border: 1px solid #9dafb1;
+
+}
+aside ul{
+  text-align: left;
 }
 
 /* Position images des aritsites  */
@@ -173,6 +179,7 @@ aside{
   padding: 5px 20px;
   height: 60px; 
 }
+
 
 
   /* PAGE ARTISTE */

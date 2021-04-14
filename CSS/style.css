@@ -448,7 +448,10 @@ footer li{
   font-size: 30px;
   height: 70px;
 
+}
 
+.historique{
+  display: none;
 }
 
  /* sidenav menu */
@@ -626,6 +629,11 @@ footer li{
   .iconespageartistes{
     width: 600px;
   }
+
+  .historique{
+    display: none;
+  }
+  
 
 
 
